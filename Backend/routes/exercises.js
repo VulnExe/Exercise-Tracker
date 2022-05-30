@@ -8,7 +8,7 @@ const Exercise = require('../models/exercise.model')
      .catch((err)=>res.status(400).json("Error :"+ err))
  })
 
- router.post("./add",(req,res)=>{
+ router.post("/add",(req,res)=>{
      const username = req.body.username
      const description = req.body.description
      const duration = Number(req.body.duration)

@@ -22,7 +22,7 @@ const Exercise = require('../models/exercise.model')
      })
      newExercise.save()
      .then(()=>res.json("exercise saved successfully!!"))
-     .catch((err)=>res.status(400).json('Error :'+ err))
+     .catch((err)=>res.status(400).json('Error on :'+ err))
  })
 
 
